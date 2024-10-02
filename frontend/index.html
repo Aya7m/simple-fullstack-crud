@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="title text-center my-3">
+        <h1>CRUD Operations</h1>
+    </div>
+    <div class="container  p-3 my-5  ">
+        <label for="title">post Title</label>
+        <input class="form-control my-3" type="text" id="title">
+        <label for="description"> Description</label>
+        <input class="form-control my-3" type="text" id="description">
+        <label for="price">price</label>
+        <input type="number" name="price" id="price" class="form-control my-3">
+       
+        <button onclick="addPost()" id="add" class="btn btn-outline-primary">Add post</button>
+        <button onclick="updatePost()" id="update" class="btn btn-outline-success">Update post</button>
+        <input onkeyup="search(this.value)" type="text" class="form-control my-5" placeholder="search...">
+    </div>
+    <div class="container my-5">
+        <table class="table text-center table-hover">
+            <thead>
+                <th>index</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>price</th>
+                <th>Actions</th>
+            </thead>
+            <tbody id="tbody">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>ahmed</td>
+                    <td>ahmed</td>
+                    <td>200</td>
+                    <td>
+                        <button class="btn btn-success">Update</button>
+                        <button class="btn btn-danger">Delete</button>
+                    </td>
+                </tr> -->
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
